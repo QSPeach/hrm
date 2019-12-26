@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hrm-basic-generator" />
+        <module name="hrm-basic-util" />
+        <module name="hrm-eureka-server" />
+        <module name="hrm-server-config" />
+        <module name="hrm-system-interface" />
+        <module name="hrm-system-server" />
+        <module name="hrm-zuul-gateway" />
+        <module name="htm-system-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hrm-basic-generator" target="1.5" />
+      <module name="hrm-basic-parent" target="1.5" />
+      <module name="hrm-basic-util" target="1.5" />
+      <module name="hrm-eureka-server" target="1.5" />
+      <module name="hrm-parent" target="1.5" />
+      <module name="hrm-server-config" target="1.5" />
+      <module name="hrm-supports-parent" target="1.5" />
+      <module name="hrm-system-interface" target="1.5" />
+      <module name="hrm-system-parent" target="1.5" />
+      <module name="hrm-system-server" target="1.5" />
+      <module name="hrm-zuul-gateway" target="1.6" />
+      <module name="htm-system-interface" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
