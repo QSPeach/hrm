@@ -1,4 +1,4 @@
-package cn.itsource.hrm.domain;
+package cn.itsource.hrm.config.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -20,21 +20,21 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t_systemdictionary")
-public class Systemdictionary extends Model<Systemdictionary> {
+@TableName("t_systemdictionaryitem")
+public class Systemdictionaryitem extends Model<Systemdictionaryitem> {
 
     private static final long serialVersionUID=1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    private String sn;
+    private Long parentId;
 
     private String name;
 
-    private String intro;
+    private Integer requence;
 
-    private Integer state;
+    private String intro;
 
 
     @Override

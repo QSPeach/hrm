@@ -3,7 +3,7 @@
 <mapper namespace="cn.itsource.hrm.mapper.SystemdictionaryitemMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.itsource.hrm.domain.Systemdictionaryitem">
+    <resultMap id="BaseResultMap" type="cn.itsource.hrm.config.domain.Systemdictionaryitem">
         <id column="id" property="id" />
         <result column="parent_id" property="parentId" />
         <result column="name" property="name" />

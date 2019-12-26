@@ -1,6 +1,6 @@
 package cn.itsource.hrm.mapper;
 
-import cn.itsource.hrm.domain.Systemdictionary;
+import cn.itsource.hrm.config.domain.Systemdictionary;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

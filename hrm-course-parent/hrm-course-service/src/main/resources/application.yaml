@@ -1,0 +1,13 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: COURSE-SERVICE
+  datasource:
+    url: jdbc:mysql:///hrm-course?useSSL=false&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+hrm:
+  swagger:
+    title: 课程管理服务
+    description: 课程管理服务接口

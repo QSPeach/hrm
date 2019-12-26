@@ -1,6 +1,6 @@
 package cn.itsource.hrm.service;
 
-import cn.itsource.hrm.domain.Systemdictionaryitem;
+import cn.itsource.hrm.config.domain.Systemdictionaryitem;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

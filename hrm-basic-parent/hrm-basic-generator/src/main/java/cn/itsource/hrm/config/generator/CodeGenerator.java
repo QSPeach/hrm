@@ -1,4 +1,4 @@
-package cn.itsource.hrm.generator;
+package cn.itsource.hrm.config.generator;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -14,7 +14,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        final ResourceBundle rb = ResourceBundle.getBundle("system-generator");
+        final ResourceBundle rb = ResourceBundle.getBundle("course-generator");
         AutoGenerator mpg = new AutoGenerator();
 
         // 全局配置
@@ -114,7 +114,7 @@ public class CodeGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
-        strategy.setInclude("t_systemdictionary","t_systemdictionaryitem");//生成的表
+        strategy.setInclude("t_course_type");//生成的表
         strategy.setTablePrefix("t_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new VelocityTemplateEngine());

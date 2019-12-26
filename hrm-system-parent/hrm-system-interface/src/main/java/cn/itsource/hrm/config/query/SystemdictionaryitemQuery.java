@@ -1,4 +1,4 @@
-package cn.itsource.hrm.query;
+package cn.itsource.hrm.config.query;
 
 
 
