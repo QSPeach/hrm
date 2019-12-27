@@ -80,7 +80,7 @@ public class ${entity}Controller {
     @RequestMapping(value = "/page",method = RequestMethod.POST)
     public PageList<${entity}> page(@RequestBody ${entity}Query query)
     {
-        Page<${entity}> page = ${table.entityPath}Service.page(new Page<${entity}>(query.getPageNum(), query.getPageSize()));
-        return new PageList<>(page.getTotal(),page.getRecords());
+        Page<${entity}> page = ${table.entityPath}Service.page(new Page<${entity}>(query.getPage(), query.getRows()));
+        return new PageList<${entity}>(page.getTotal(),page.getRecords());
     }
 }

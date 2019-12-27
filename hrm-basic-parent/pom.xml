@@ -14,5 +14,6 @@
     <modules>
         <module>hrm-basic-util</module>
         <module>hrm-basic-generator</module>
+        <module>qs-hrm-spring-boot-starter</module>
     </modules>
 </project>

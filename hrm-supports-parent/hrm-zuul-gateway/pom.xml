@@ -46,7 +46,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 工程主入口-->
-                    <mainClass>cn.itsource.hrm.EurekaServerApplication</mainClass>
+                    <mainClass>cn.itsource.hrm.ZuulGatewayApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
