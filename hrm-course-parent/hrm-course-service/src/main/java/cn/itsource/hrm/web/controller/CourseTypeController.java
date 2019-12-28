@@ -90,42 +90,40 @@ public class CourseTypeController {
 
     @RequestMapping(value = "/treeData",method = RequestMethod.GET)
     public List<CourseType> getTreeData(){
-        List<CourseType> courseTypes = getByParentId(0L);
-        return courseTypes;
+        return courseTypeService.treeData();
     }
 
-    public List<CourseType> getByParentId(Long id){
-        List<CourseType> list = courseTypeService.list(new QueryWrapper<CourseType>().eq("pid", id));
-
-        if (list==null&&list.size()==0){
-            return null;
-        }
-
-        for (CourseType courseType : list) {
-            List<CourseType> list1 = getByParentId(courseType.getId());
-            courseType.setChildren(list1);
-        }
-        return list;
-    }
-    public List<CourseType> loadTreeDataLoop(){
-        List<CourseType> firstLevelTypes = new ArrayList<CourseType>();
-        List<CourseType> list = courseTypeService.list(new QueryWrapper<CourseType>());
-        Map<Long,CourseType> map = new HashMap<Long,CourseType>();
-        for (CourseType courseType : list) {
-            map.put(courseType.getId(), courseType);
-        }
-
-        for (CourseType courseType : list) {
-            if (courseType.getId()==0L){
-                firstLevelTypes.add(courseType);
-            }else {
-                CourseType parent = map.get(courseType.getPid());
-                if (parent != null){
-                    parent.getChildren().add(courseType);
-                }
-            }
-        }
-        System.out.println("123");
-        return firstLevelTypes;
-    }
+//    public List<CourseType> getByParentId(Long id){
+//        List<CourseType> list = courseTypeService.list(new QueryWrapper<CourseType>().eq("pid", id));
+//
+//        if (list==null&&list.size()==0){
+//            return null;
+//        }
+//
+//        for (CourseType courseType : list) {
+//            List<CourseType> list1 = getByParentId(courseType.getId());
+//            courseType.setChildren(list1);
+//        }
+//        return list;
+//    }
+//    public List<CourseType> loadTreeDataLoop(){
+//        List<CourseType> firstLevelTypes = new ArrayList<CourseType>();
+//        List<CourseType> list = courseTypeService.list(new QueryWrapper<CourseType>());
+//        Map<Long,CourseType> map = new HashMap<Long,CourseType>();
+//        for (CourseType courseType : list) {
+//            map.put(courseType.getId(), courseType);
+//        }
+//
+//        for (CourseType courseType : list) {
+//            if (courseType.getId()==0L){
+//                firstLevelTypes.add(courseType);
+//            }else {
+//                CourseType parent = map.get(courseType.getPid());
+//                if (parent != null){
+//                    parent.getChildren().add(courseType);
+//                }
+//            }
+//        }
+//        return firstLevelTypes;
+//    }
 }

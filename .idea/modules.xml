@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/hrm-basic-generator.iml" filepath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator/hrm-basic-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-parent.iml" filepath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util/hrm-basic-util.iml" filepath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util/hrm-basic-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-common-parent/hrm-common-parent.iml" filepath="$PROJECT_DIR$/hrm-common-parent/hrm-common-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-common-parent/hrm-common-redis-interface/hrm-common-redis-interface.iml" filepath="$PROJECT_DIR$/hrm-common-parent/hrm-common-redis-interface/hrm-common-redis-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-common-parent/hrm-common-redis-service/hrm-common-redis-service.iml" filepath="$PROJECT_DIR$/hrm-common-parent/hrm-common-redis-service/hrm-common-redis-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/hrm-course-interface.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/hrm-course-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-service/hrm-course-service.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/hrm-course-service.iml" />

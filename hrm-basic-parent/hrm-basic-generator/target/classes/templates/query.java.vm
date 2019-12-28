@@ -2,7 +2,7 @@ package ${cfg.parent}.query;
 
 
 
-import cn.itsource.basic.util.BaseQuery;
+import cn.itsource.basic.query.BaseQuery;
 
 
 /**

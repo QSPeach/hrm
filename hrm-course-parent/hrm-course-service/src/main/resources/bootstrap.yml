@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: COURSE-SERVICE
+  cloud:
+    config:
+      name: application-course
+      discovery:
+        service-id: CONFIG-SERVER
+        enabled: true
+  profiles:
+    active: dev
+feign:
+  hystrix:
+    enabled: true
+
