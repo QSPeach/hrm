@@ -1,7 +1,7 @@
 package cn.itsource.hrm.web.controller;
 
-import cn.itsource.hrm.config.domain.Systemdictionaryitem;
-import cn.itsource.hrm.config.query.SystemdictionaryitemQuery;
+import cn.itsource.hrm.domain.Systemdictionaryitem;
+import cn.itsource.hrm.query.SystemdictionaryitemQuery;
 import cn.itsource.basic.util.AjaxResult;
 import cn.itsource.basic.util.PageList;
 import cn.itsource.hrm.service.ISystemdictionaryitemService;
